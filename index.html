@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catching star</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    <body>
+<div id="screen">
+    <div id="game">
+        <div id="background_container"></div>
+        <div id="game_elements">
+            <div id="star">
+                <div class="star"></div>
+            </div>
+
+            <div id="star1">
+                <div class="star1"></div>
+            </div>
+
+            <div id="star2">
+                <div class="star2"></div>
+            </div>
+            <div id="star3">
+                <div class="star3"></div>
+            </div>
+            <div id="star4">
+                <div class="star4"></div>
+            </div>
+
+            <div id="bstar">
+                <div class="bstar"></div>
+            </div>
+
+            <div id="time">
+                <div class="time"></div>
+            </div>
+
+            <div id="heart">
+                <div class="heart"></div>
+            </div>
+
+            <div id="cross">
+                <div class="cross"></div>
+            </div>
+
+            <div id="circle">
+                <div class="circle"></div>
+            </div>
+
+            <div id="rect">
+                <div class="rect"></div>
+            </div>
+
+
+        </div>
+        <div id="game_ui">
+            <div id="time_board">Time: </div>
+                 <div id="point_container">
+        <div id="points">POINTS</div> </div>
+
+            
+            <div id="life">
+                <div id="hearts_1">❤️</div>
+                
+                <div id="hearts_2">❤️</div>
+                
+                <div id="hearts_3">❤️</div>
+            </div>
+
+
+            <!--//sounds-->
+
+            <audio id="sound_music" src="Sounds/music.mp3"></audio>
+            <audio id="sound_miss" src="Sounds/mm.mp3"></audio>
+            <audio id="sound_drop" src="Sounds/gts.mp3"></audio>
+            <audio id="sound_yes" src="Sounds/ye.mp3"></audio>
+              <audio id="sound_lev" src="Sounds/mulev.mp3"></audio>
+            <audio id="sound_gameover" src="Sounds/gameover.mp3"></audio>
+    
+            <audio id="sound_no" src="Sounds/no.mp3"></audio>
+
+
+
+        </div>
+   
+    </div>
+    <div id="mute_container">
+    <div class="on"></div>
+    <div class="off"></div> </div>
+    
+    <div id="setting_container">
+        <div id="setting_background">
+        </div>
+        <div id="setsound">
+     
+       
+            <div id="son"></div>
+            <div id="soff"></div>
+            </div>
+         <div id="back"></div>
+        <div id="volumeSlider">
+        <input type="range" min="1" max="100" value="60" class="mySlider" id="sliderinput">
+            <p>Volume: <span id="volume"></span> </p>
+        </div>
+    </div>
+     <div id="setting"></div>
+         <div id="start_container">
+            <div id="start_background"></div>
+            <div id="start_button"></div> </div> 
+
+        <div id="gameover_container">
+        <div id="gameover">  </div>
+        <div id="play_again"></div> </div>
+    
+        
+        <div id="level">
+    <div id="level_background">
+        
+            <div id="level_completescreen">
+        </div>
+        <div id="play_againl"></div> 
+        </div></div>
+    
+    </div>
+    
+
+    <script src="java.js"></script>
+        
+    </body>
+</html>

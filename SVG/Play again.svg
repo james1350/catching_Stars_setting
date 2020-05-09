@@ -1,0 +1,46 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="150" viewBox="0 0 400 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2, .cls-6 {
+        font-size: 64px;
+        font-family: CooperBlack, Cooper Black;
+      }
+
+      .cls-2 {
+        fill: #00767c;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #00e7ff;
+        stroke: #052426;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="202.99" cy="74.01" r="169.49" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcee21"/>
+      <stop offset="0.88" stop-color="#f7931e"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <rect class="cls-1" x="0.5" y="0.5" width="399" height="149"/>
+    <path d="M399,1V149H1V1H399m1-1H0V150H400V0Z"/>
+  </g>
+  <text class="cls-2" transform="translate(28 87.72)">Pl<tspan class="cls-3" x="67.16" y="0">a</tspan><tspan x="101.63" y="0">y </tspan><tspan class="cls-4" x="157.25" y="0">A</tspan><tspan class="cls-5" x="210.84" y="0">g</tspan><tspan x="247.63" y="0">ain</tspan></text>
+  <text class="cls-6" transform="translate(20 82.72)">Pl<tspan class="cls-3" x="67.16" y="0">a</tspan><tspan x="101.63" y="0">y </tspan><tspan class="cls-4" x="157.25" y="0">A</tspan><tspan class="cls-5" x="210.84" y="0">g</tspan><tspan x="247.63" y="0">ain</tspan></text>
+</svg>

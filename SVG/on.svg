@@ -1,0 +1,64 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="150" viewBox="0 0 400 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f905d;
+      }
+
+      .cls-2 {
+        fill: #0dff24;
+      }
+
+      .cls-3 {
+        fill: url(#Sky);
+      }
+
+      .cls-4 {
+        fill: #00baff;
+      }
+
+      .cls-5 {
+        fill: url(#Sky-2);
+      }
+
+      .cls-6, .cls-7 {
+        font-size: 94px;
+        stroke: #8770e8;
+        stroke-miterlimit: 10;
+        font-family: CooperBlack, Cooper Black;
+      }
+
+      .cls-6 {
+        fill: #179e17;
+      }
+
+      .cls-7 {
+        fill: #17ff17;
+      }
+    </style>
+    <linearGradient id="Sky" x1="26" y1="64" x2="366" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cce0f4"/>
+      <stop offset="0.06" stop-color="#c3dcf2"/>
+      <stop offset="0.17" stop-color="#a9d2ee"/>
+      <stop offset="0.31" stop-color="#80c2e7"/>
+      <stop offset="0.46" stop-color="#47acde"/>
+      <stop offset="0.57" stop-color="#1e9cd7"/>
+      <stop offset="0.87" stop-color="#0075be"/>
+      <stop offset="0.99" stop-color="#005b97"/>
+    </linearGradient>
+    <linearGradient id="Sky-2" data-name="Sky" y1="63" x2="218" y2="63" xlink:href="#Sky"/>
+  </defs>
+  <g>
+    <rect class="cls-1" x="30" y="14" width="340" height="120" rx="54.21"/>
+    <g>
+      <rect class="cls-2" x="26" y="4" width="340" height="120" rx="54.21"/>
+      <path class="cls-3" d="M311.79,5A53.27,53.27,0,0,1,365,58.21V69.79A53.27,53.27,0,0,1,311.79,123H80.21A53.27,53.27,0,0,1,27,69.79V58.21A53.27,53.27,0,0,1,80.21,5H311.79m0-1H80.21A54.21,54.21,0,0,0,26,58.21V69.79A54.21,54.21,0,0,0,80.21,124H311.79A54.21,54.21,0,0,0,366,69.79V58.21A54.21,54.21,0,0,0,311.79,4Z"/>
+    </g>
+    <g>
+      <rect class="cls-4" x="26" y="4" width="192" height="118" rx="54.21"/>
+      <path class="cls-5" d="M163.79,5A53.27,53.27,0,0,1,217,58.21v9.58A53.27,53.27,0,0,1,163.79,121H80.21A53.27,53.27,0,0,1,27,67.79V58.21A53.27,53.27,0,0,1,80.21,5h83.58m0-1H80.21A54.21,54.21,0,0,0,26,58.21v9.58A54.21,54.21,0,0,0,80.21,122h83.58A54.21,54.21,0,0,0,218,67.79V58.21A54.21,54.21,0,0,0,163.79,4Z"/>
+    </g>
+    <text class="cls-6" transform="translate(49.39 94.91)">ON</text>
+    <text class="cls-7" transform="translate(45.39 90.91)">ON</text>
+  </g>
+</svg>

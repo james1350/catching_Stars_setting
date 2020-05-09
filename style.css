@@ -1,0 +1,723 @@
+body{
+    margin: 0;
+}
+
+#screen{
+      position: relative;
+    height: 56.25vw;
+    width: 99vw;
+
+}
+
+#game{
+    position: absolute;
+     height:56.25vw;
+    width: 99vw;
+    overflow: hidden;
+}
+
+#background_container{
+    position: absolute;
+    width: 99vw;
+    height: 56.25vw;
+    background-image: url(background.jpg);
+  background-size: 100%;
+}
+#start_container{
+    position: absolute;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-image: url(SVG/bgstart.jpg);
+display: none;
+    
+}
+#start_background{
+    position: absolute;
+    background-image: url(SVG/start%20screen.svg);
+    background-size: 100%;
+    width: 55vw;
+    height: 56.25vw;
+    left: 25vw;  
+}
+#start_button{
+    position: absolute;
+    background-image: url(SVG/Start.svg);;
+    height: 7vw;
+    width: 19vw;
+    border-radius: 5vw;
+    background-size: 100%;
+    left: 41vw;
+    bottom: 7vw;
+}
+#start_button:hover {
+    color: greenyellow;
+    transform: scale(1.3);
+    border: 0;
+}
+#game_elements{
+    position: absolute;
+    border: 2px solid lightblue;
+    height: 44vw;
+    width: 98.5vw;
+    top:7vw;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#star4{
+    position: absolute;
+   top: -11vw ;
+    left: 82vw;
+    width: 15vw;
+    height: 15vw;
+    
+}
+
+#star4 .star4{
+    position: absolute;
+    background-image: url(SVG/star.svg);
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+}
+
+#star1{
+    position: absolute;
+    top: -11vw ;
+
+    width: 15vw;
+    height:15vw ;
+}
+
+#star1 .star1{
+    position: absolute;
+    background-image: url(SVG/star.svg);
+    background-size: 100%;
+      width: 15vw;
+    height:15vw ;
+}
+#star2{
+    position: absolute;
+   top: -11vw ;
+    left:25vw ;
+     width: 15vw;
+    height:15vw ;
+    
+}
+
+#star2 .star2{
+    position: absolute;
+    background-image: url(SVG/star.svg);
+    background-size: 100%;
+     width: 15vw;
+    height:15vw ;
+}
+#star3{
+    position: absolute;
+    top: -11vw ;
+    left:50vw ;
+     width: 15vw;
+    height:15vw ;
+    
+}
+
+#star3 .star3{
+    position: absolute;
+    background-image: url(SVG/star.svg);
+    background-size: 100%;
+      width: 15vw;
+    height:15vw ;
+}
+
+#bstar{
+        position: absolute;
+   top: -12vw ;
+    
+    width: 15vw;
+    height:15vw ;
+}
+#bstar .bstar{
+      position: absolute;
+    background-image: url(SVG/bstar.svg);
+    background-size: 100%;
+      width: 15vw;
+    height:15vw ;
+}
+#heart{
+    height: 15vw;
+    width: 15vw;
+    top: -11vw ;
+    position: absolute;
+}
+#heart .heart{
+    height: 15vw;
+    width: 15vw;
+background-image: url(SVG/heart.svg);
+    background-size: cover;
+}
+
+#circle{
+         position: absolute;
+ top: -11vw ;
+    left:25vw ;
+   width: 15vw;
+    height:15vh ;
+}
+
+#circle .circle{
+      position: absolute;
+    background-image: url(SVG/circle.svg);
+    background-size: 100%;
+      width: 15vw;
+    height:15vw ;
+
+}
+#time{
+    position: absolute;
+    height: 15vw;;
+    width: 15vw;
+    top: -12vw ;
+    left: 82vw;
+}
+#time .time{
+    height: 15vw;
+    width: 15vw;
+    background-image: url(SVG/tim.svg);
+    background-size: cover;
+}
+#cross{
+        position: absolute;
+   top: -11vw ;
+    left:53vw ;
+    width: 16vw;
+    height: 17vw ;   
+    
+}
+
+#cross .cross{
+     position: absolute;
+    background-image: url(SVG/cross.svg);
+    background-size: 100%;
+      width: 16vw;
+    height:17vw ;
+    top: -11vw ;
+}
+
+#rect{
+           position: absolute;
+    right: 1vw;
+   width: 12vw;
+    height:12vw ;
+  top: -12vw ;
+}
+#rect .rect{
+     
+    background-image: url(SVG/rect.svg);
+    background-size: 100%;
+      width: 15vw;
+    height:15vw ;
+  /*  animation: falling_kf 4s;
+    animation-iteration-count: infinite;*/
+}
+
+#game_ui{
+    display: flex;
+    position: absolute;
+    width: 99vw;
+    height: 7vw;;
+    overflow: hidden;
+    margin: 0;
+}
+#time_board{
+    position: absolute;
+    color: aliceblue;
+    text-align: center;
+    padding: 1vw;
+    font-size: 5vw;
+    left: 45vw;
+    top: 0vw;
+    height: 2vw;
+    width: 10vw;
+    text-decoration-style: double;
+    font-family: cursive;
+    
+}
+
+
+/*#mute_container{
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    border: 1px solid white;
+    background-color: aliceblue;
+    border-radius: 15px;
+    left: 50vw;
+   top: 51vw;
+
+}
+.on{
+    background-image: url(SVG/soundon.svg);
+    background-size: 100%;
+}
+.off{
+    background-image: url(SVG/soundoff.svg);
+    background-size: 100%;
+}*/
+#life{
+    position: absolute;
+    display: flex;
+    width: 17vw;
+    height: 5vw;
+    right: 2vw;
+    overflow: hidden;
+ top: 1vw;
+    align-items: center;
+    font-size: 4vw;
+}
+
+
+/*#hearts_1 {
+    font-size: 4vw;
+    transform: scale(1);
+    
+  }
+#hearts_2 {
+    font-size: 4vw;
+        transform: scale(1);
+  }
+#hearts_3 {
+    font-size: 4vw;
+        transform: scale(1);
+  
+  }*/
+
+#point_container{
+    position: absolute;
+   height:10vw;
+    width:10vw;
+      background-image: url(SVG/point.svg);
+    background-size:cover;
+    top: -1vw;
+    
+  
+}
+#points{
+    position: absolute;
+    left: 10vw;
+    top: 4vw;
+    align-content: center;
+    align-items: center;
+    color:skyblue;;
+    font-size: 3vw;
+    font-family: cursive;
+    outline: inherit;
+   
+}
+
+/*screens*/
+
+
+
+
+#level{
+    height:100%;
+    width: 100%;
+    display: none;
+}
+#level_background{
+    position: absolute;
+    background-image: url(SVG/bgstart.jpg);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#level_completescreen{
+    position: absolute;
+    background-image: url(SVG/level_complete.svg);
+    background-size: 100%;
+    height: 25vw;
+    width: 80vw;
+    left: 7vw;
+    top: 15vw;
+}
+#play_againl{
+    position: absolute;
+    background-image: url(SVG/Play%20again.svg);
+    background-size: 100%;
+    width: 25vw;
+    height: 9vw;
+    border-radius: 10vw;
+    left: 35vw;
+   bottom: 10vw;
+}
+
+
+#play_againl:hover {
+    color: greenyellow;
+    transform: scale(1.3);
+    border: 0;
+}
+
+
+#gameover_container {
+    position: absolute;
+  width: 99vw;
+    height: 56.25vw;
+   background-image: url(SVG/bgstart.jpg);
+    background-size: 100%;
+    display: none;
+}
+#gameover {
+    position: absolute;
+    background-image: url(SVG/Game_over.svg);
+    background-size:100%;
+    width: 89vw;
+    height: 30vw;
+    left: 8vw;
+    animation: gameover_kf 3s;
+    animation-iteration-count:1;
+    top: 6vw;
+    
+}
+#play_again{
+    position: absolute;
+    background-image: url(SVG/Play%20again.svg);
+    background-size: 100%;
+    width: 25vw;
+    height: 9vw;
+    border-radius: 10vw;
+    left: 35vw;
+   bottom: 10vw;
+}
+
+
+#play_again:hover {
+    color: greenyellow;
+    transform: scale(1.3);
+    border: 0;
+}
+
+#setting_container{
+    position: absolute;
+    width:66vw;
+    height: 44vw;
+    left:20vw;
+    top: 7.5vw;
+    display: none;
+}
+#setting_background{
+    position: absolute;
+    height: 43vw;
+    width: 65vw;
+   
+    border-radius: 5vw;
+   background-image: url(SVG/settingn.svg);
+    background-size: 100%;
+}
+#setsound{
+    position: absolute;
+    height: 7vw;
+    width: 20vw;
+  
+    background-size: 100%;
+    top: 19vw;
+    right: 2vw;
+}
+.son{
+     height: 7vw;
+    width: 20vw;
+    background-image: url(SVG/on.svg);
+    background-size: 100%;
+}
+.soff{
+     height: 7vw;
+    width: 20vw;
+    background-image: url(SVG/off.svg);
+    background-size: 100%;
+}
+#back { 
+    position: absolute;
+      height: 8vw;
+    width: 20vw;
+    background-image: url(SVG/backn.svg);
+    background-size: 100%;
+    top: 34vw;
+    left: 3vw;
+    
+}
+#back:hover {
+    color: greenyellow;
+    transform: scale(1.2);
+    border: 0;
+}
+#volumeSlider{
+    position: absolute;
+    bottom: 12vw;
+    left: 11vw;
+    width: 30vw;
+}
+.mySlider {
+    width: 40vw;
+    height: 2vw;
+
+}
+
+#volumeSlider p {
+  position: absolute;
+    
+    bottom: 1vw;
+    font-size: 5vw;
+    margin-bottom: 1.5vw;
+    font-family: cursive;
+    color:blue;
+
+    text-transform: full-width;
+    
+
+}
+
+
+#setting{
+    position: absolute;
+    background-image: url(SVG/setting.svg);
+    background-size: cover;
+    height: 6vw;
+    width: 8vw;
+    bottom:-1vw;
+    right: 4vw;
+}
+
+#setting:hover {
+    color: greenyellow;
+   
+    border: 0;
+    animation: hAnimation 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes hAnimation{
+    50%{
+        transform: rotate(360deg) scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.startanimation{
+    animation-name: startscreen_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.falling {
+    animation-name: falling_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 7s;
+    animation-play-state: 
+        
+}
+.zoom{
+    animation-name: zoom_kf;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.6, .47 , .3 ,1.4)
+}
+.shake{
+    animation-name: shake_kf;
+    animation-iteration-count: 2;
+    animation-duration: 0.2s;
+    
+}
+.gameoverkf{
+    animation-name: gameover_kf;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.fadeout{
+    animation-name: fadeout_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    
+}
+@keyframes fadeout_kf{
+    0%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    100%{
+        transform: scale(0.2);
+        opacity: 0;
+    }
+}
+
+@keyframes shake_kf{
+    0%{
+        transform: rotate(0) scale(1);
+    }
+    10%{
+          transform: rotate(-5deg) scale(1.5);
+    }
+    50%{
+          transform: rotate(5deg) scale(1);
+    }
+    100%{
+          transform: rotate(0) scale(1.5);
+    }
+}
+
+@keyframes zoom_kf{
+    0%{
+        transform: scale(1);
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: scale(1.3);
+        transform: rotate(-20deg);
+       
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0%;
+    }
+}
+
+
+@keyframes falling_kf{
+    0%{
+        top: -12vw;;
+    }
+    100%{
+        top:75vw;
+    }
+    
+}
+
+@keyframes startscreen_kf {
+    0%, 100%{
+       transform: scale(0.1);
+        
+       
+    }
+    25%{
+   transform: rotate(-20deg);
+    }
+    50%{
+        transform: scale(1.5);
+        filter: opacity(90%);
+        
+    }
+    75%{
+        transform: scale(0);
+        transform: rotate(-20deg);
+    }
+}
+@keyframes gameover_kf{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+       
+    }
+}
+
+/*
+speed classes*/
+.blur{
+    opacity: 70%;
+    filter: blur(50%);
+}
+
+.pause{
+    animation-play-state: paused;
+}
+
+.speed1 {
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.speed2 {
+    animation-duration: 5s;
+}
+
+.speed3 {
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+.speed4 {
+    animation-duration: 3.5s;
+animation-delay: 2s;
+}
+
+.speed5 {
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.speed6 {
+    animation-duration: 4.5s;
+    animation-delay: 1.5s;
+}
+
+.speed7 {
+    animation-duration: 2.5s;
+}
+
+.speed8 {
+    animation-duration: 6s;
+}
+.speedh {
+    animation-duration: 5s;
+    animation-delay: 10s;
+}
+.speedt {
+    animation-duration: 3s;
+    animation-delay: 10s;
+}
+
+
+.dead{
+    transform: scale(0);
+    
+}
+.alive{
+    transform: scale(1);
+}
+
+.displayb{
+    display: block;
+    
+}
+.displayn{
+    display: none;
+}
+
+/*positions*/
+
+.position_1{
+    left: 1vw;
+    
+}
+.position_2{
+    left: 25vw;
+    
+}
+.position_3{
+    left: 50vw;
+    
+}
+.position_4{
+    left: 82vw;
+    
+}
